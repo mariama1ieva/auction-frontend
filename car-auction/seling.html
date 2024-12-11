@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Car Auction</title>
+
+    <!-- CSS Files -->
+    <link href="../assets/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="../assets/css/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="../assets/css/nice-select.css" />
+    <link rel="stylesheet" href="../assets/css/animate.min.css" />
+    <link rel="stylesheet" href="../assets/css/jquery.fancybox.min.css" />
+    <link href="../assets/css/boxicons.min.css" rel="stylesheet" />
+    <link rel="stylesheet" href="../assets/css/style.css" />
+ 
+</head>
+<body>
+    <div class="container mt-5">
+        <h1 class="text-center text-primary mb-4">Car Auction Submission</h1>
+        <form>
+            <!-- Auction Title -->
+            <div class="mb-3">
+                <label for="auctionTitle" class="form-label">Auction Title</label>
+                <input type="text" id="auctionTitle" name="auctionTitle" class="form-control" placeholder="Enter auction title" required>
+            </div>
+
+            <!-- Brand and Model -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="brand" class="form-label">Brand</label>
+                    <select id="brand" name="brand" class="form-select" required>
+                        <option value="">Select</option>
+                        <option value="bmw">BMW</option>
+                        <option value="mercedes">Mercedes</option>
+                        <option value="toyota">Toyota</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="model" class="form-label">Model</label>
+                    <input type="text" id="model" name="model" class="form-control" placeholder="Enter car model" required>
+                </div>
+            </div>
+
+            <!-- Year and Color -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="year" class="form-label">Year</label>
+                    <input type="number" id="year" name="year" class="form-control" placeholder="Enter manufacturing year" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="color" class="form-label">Color</label>
+                    <input type="text" id="color" name="color" class="form-control" placeholder="Enter car color" required>
+                </div>
+            </div>
+
+            <!-- Fuel Type and Mileage -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="fuelType" class="form-label">Fuel Type</label>
+                    <select id="fuelType" name="fuelType" class="form-select" required>
+                        <option value="">Select</option>
+                        <option value="petrol">Petrol</option>
+                        <option value="diesel">Diesel</option>
+                        <option value="electric">Electric</option>
+                    </select>
+                </div>
+                <div class="col-md-6">
+                    <label for="mileage" class="form-label">Mileage (km)</label>
+                    <input type="number" id="mileage" name="mileage" class="form-control" placeholder="Enter mileage" required>
+                </div>
+            </div>
+
+            <!-- Starting Bid and Auction End Date -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="startingBid" class="form-label">Starting Bid (USD)</label>
+                    <input type="number" id="startingBid" name="startingBid" class="form-control" placeholder="Enter starting bid amount" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="endDate" class="form-label">Auction End Date</label>
+                    <input type="date" id="endDate" name="endDate" class="form-control" required>
+                </div>
+            </div>
+
+            <!-- Upload Images -->
+            <div class="mb-3">
+                <label for="carImages" class="form-label">Upload Car Images</label>
+                <input type="file" id="carImages" name="carImages" class="form-control" multiple required>
+                <small class="text-muted">You can upload multiple images.</small>
+            </div>
+
+            <!-- Description -->
+            <div class="mb-3">
+                <label for="description" class="form-label">Description</label>
+                <textarea id="description" name="description" rows="4" class="form-control" placeholder="Provide details about the car and auction terms" required></textarea>
+            </div>
+
+            <!-- Contact Information -->
+            <div class="row mb-3">
+                <div class="col-md-6">
+                    <label for="sellerName" class="form-label">Your Name</label>
+                    <input type="text" id="sellerName" name="sellerName" class="form-control" placeholder="Enter your name" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="contactNumber" class="form-label">Contact Number</label>
+                    <input type="text" id="contactNumber" name="contactNumber" class="form-control" placeholder="Enter your phone number" required>
+                </div>
+            </div>
+
+            <!-- Submit Button -->
+            <div class="text-center">
+                <button type="submit" class="btn btn-primary btn-lg">Submit Auction</button>
+            </div>
+        </form>
+    </div>
+
+    <!-- JS Files -->
+    <script src="../assets/js/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/jquery.fancybox.min.js"></script>
+    <script src="../assets/js/swiper-bundle.min.js"></script>
+    <script src="../assets/js/jquery.nice-select.min.js"></script>
+    <script src="../assets/js/wow.min.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
